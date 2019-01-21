@@ -1,0 +1,113 @@
+lands.chunks.<Number>
+Description: Defines max chunk claim for player
+
+lands.free.chunks.<Number>
+Description: Defines free claims before player
+needs to pay for an claim
+
+lands.members.<Number>
+Description: Defines max chunk members for player
+
+lands.lands.<Number>
+Description: Defines max lands a player can be in
+
+lands.ownLands.<Number>
+Description: Defines max owning lands a player can have
+
+lands.selection.<Number>
+Description: Defines max chunk selection
+
+lands.taxes.config
+Description: Allows player to edit taxes in land
+
+lands.gui.chunk.teleport
+Description: Allow to teleport to claimed chunks via GUI
+
+lands.command.<COMMAND>
+Description: Access to commands
+Example: lands.command.trust
+for command /Lands trust
+NOTE: /Lands needs
+lands.command.menu
+
+lands.command.admin
+Description: Access to admin commands
+
+lands.command.admin.land
+Description: Access to /Land admin land commands
+
+lands.command.admin.land.edit
+Description: Access to /Land admin land <Land> edit
+
+lands.command.admin.land.delete
+Description: Access to /Land admin land <Land> delete
+
+lands.command.admin.give.claimblock
+Descrption: Access to give players claimblocks
+
+lands.setting.<setting>
+Description: Access to edit chunk setting in GUI.
+Setting name can be found in GUI at "ID:"
+For all settings look here:
+https://github.com/Angeschossen/Lands/blob/master/src/me/angeschossen/lands/api/enums/LandsSetting.java
+
+lands.role.<role>.setting.<setting>
+Description: Access to edit role restrictions in GUI.
+For all role settings look here:
+https://github.com/Angeschossen/Lands/blob/master/src/me/angeschossen/lands/api/enums/LandsAction.java
+
+
+Bypass permissions:
+Information: With this you can do things without being trusted etc.
+You should give this perms to your staff members.
+
+lands.bypass.break
+Description: Bypass protection break blocks
+
+lands.bypass.place
+Description: Bypass protection place blocks
+
+lands.bypass.interact
+Description: Bypass protection interact
+
+lands.bypass.combat.animal
+Description: Bypass combat animal protection
+
+lands.bypass.combat.player
+Description: Bypass combat player protection
+
+lands.bypass.member.untrust
+Description: Allows to untrust members from lands
+or remove invites
+
+lands.bypass.edit
+Description: Select lands you're not member of
+by /Lands menu <Player>
+
+lands.bypass.edit.settings
+Description: Edit land settings
+of lands you're not the member of.
+
+lands.bypass.cooldown.wild
+Description: Bypass /Land wild cooldown
+
+lands.bypass.cooldown.rename
+Description: Bypass /Land rename cooldown
+
+lands.bypass.cooldown.wild
+Description: Bypass /Lands wild cooldown
+
+lands.bypass.cooldown.teleport
+Description: Bypass chunk teleport cooldown
+
+lands.bypass.spawn.private
+Description: Teleport to every land spawn, even if it's private.
+
+Only needed if option general.options.disallowWilderness in enabled:
+lands.bypass.disallowwilderness.break
+lands.bypass.disallowwilderness.place
+lands.bypass.disallowwilderness.interact
+
+lands.gui.chunk.teleport
+Description: Allow players to teleport
+via the GUI

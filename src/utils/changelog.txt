@@ -1,0 +1,28 @@
+2.7.5.8 Autoclaim Feature
++ Added next chunk claim cost
+placeholder:
+
+%lands_chunk_cost_next%
+
+Info: Get's the cost of the
+next claim.
+
+
++ Added auto claim feature
+
+Info: Now you can execute /Lands claim auto
+and claim chunks you're walking over automatically
+
+NOTE: This feature may also be added to other
+commands after successful feedback.
+
++ Added setting to set aliases for
+/Lands command
+
+command.aliases
+NOTE: You can't disable the main command.
+
+[#] Fixed command blacklists can be bypassed
+[#] Improved command blacklists
+
+NOTE: This update will reset command blacklists.
