@@ -35,18 +35,11 @@ public interface Land {
     String getOwnerUUID();
 
     /**
-     * Get the spawn location
-     *
-     * @return Location of spawn
-     */
-    Location getSpawnLocation();
-
-    /**
      * Get spawn
      *
      * @return Spawn
      */
-    LandSpawn getSpawn();
+    Location getSpawn();
 
     /**
      * Get name of world
@@ -110,6 +103,7 @@ public interface Land {
 
     /**
      * Check if setting is enabled
+     *
      * @param settingID ID of setting
      * @return Boolean
      */
@@ -182,8 +176,9 @@ public interface Land {
 
     /**
      * Set role of trusted player
+     *
      * @param playerUUID UUID of player
-     * @param landRole Role
+     * @param landRole   Role
      */
     void setRole(String playerUUID, LandRole landRole);
 
@@ -286,14 +281,24 @@ public interface Land {
 
     /**
      * Does land exist?
+     *
      * @return boolean
      */
     boolean exists();
 
     /**
      * Add tax
+     *
      * @param value Tax value
      * @return Result
      */
     int addTax(double value);
+
+
+    /**
+     * Set spawn location of land
+     *
+     * @param location Location of spawn
+     */
+    void setSpawn(Location location);
 }

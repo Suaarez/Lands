@@ -177,5 +177,10 @@ public interface LandPlayer {
      */
     String[] getLandNames();
 
+    /**
+     * Check is player in land
+     * @param landName Name of land
+     * @return Boolean
+     */
     boolean isInLand(String landName);
 }

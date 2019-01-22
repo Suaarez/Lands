@@ -79,7 +79,7 @@ public interface LandWorld {
      * @param chunkZ Z identifier
      * @return LandChunk or null, if not cached
      */
-    me.angeschossen.lands.api.objects.LandChunk getLandChunk(int chunkX, int chunkZ);
+    LandChunk getLandChunk(int chunkX, int chunkZ);
 
     /**
      * Unload landChunk
