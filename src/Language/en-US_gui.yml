@@ -1119,7 +1119,7 @@ gui:
         from: 10
         to: 18
       piston_griefing:
-        name: '&bPrevent Piston Griefing'
+        name: '&bAllow Piston Griefing'
         lore:
         - '&7Status: {enabled}'
         - '&7Unlocked: {unlocked}'
@@ -1127,7 +1127,7 @@ gui:
         - '&7Allow pistons to'
         - '&7grief blocks?'
         - ' '
-        - '&8- &7If disabled, players'
+        - '&8- &7If enabled, players'
         - '  &7can grief your land from'
         - '  &7wilderness by using'
         - '  &7pistons to push blocks.'

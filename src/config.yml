@@ -17,13 +17,7 @@
 general:
   # Pre configured language
   # Already translated:
-  # Danish (da-DA)
-  # German (de-DE)
   # English (en-US)
-  # Hungary (hu-HU)
-  # Polish (pl-PL)
-  # Spanish (sp-SP)
-  # Vietnamnese (vi-VI)
   language: 'en-US'
   # This will send an message
   # to console, if plugin enables

@@ -1,28 +1,22 @@
-2.7.5.8 Autoclaim Feature
-+ Added next chunk claim cost
-placeholder:
+2.7.6.0
+[#] Fixed default lang explanation for
+piston_griefing was wrong. Caused confusion.
 
-%lands_chunk_cost_next%
+Changed to:
 
-Info: Get's the cost of the
-next claim.
-
-
-+ Added auto claim feature
-
-Info: Now you can execute /Lands claim auto
-and claim chunks you're walking over automatically
-
-NOTE: This feature may also be added to other
-commands after successful feedback.
-
-+ Added setting to set aliases for
-/Lands command
-
-command.aliases
-NOTE: You can't disable the main command.
-
-[#] Fixed command blacklists can be bypassed
-[#] Improved command blacklists
-
-NOTE: This update will reset command blacklists.
+      piston_griefing:
+        name: '&bAllow Piston Griefing'
+        lore:
+        - '&7Status: {enabled}'
+        - '&7Unlocked: {unlocked}'
+        - ' '
+        - '&7Allow pistons to'
+        - '&7grief blocks?'
+        - ' '
+        - '&8- &7If enabled, players'
+        - '  &7can grief your land from'
+        - '  &7wilderness by using'
+        - '  &7pistons to push blocks.'
+        material: 'PISTON'
+        from: 10
+        to: 18
