@@ -90,7 +90,8 @@ help:
     edit: '&8/&7Lands edit &8<&aLand&8> - &eEnter edit mode for land'
     claim: '&8/&7Lands claim - &eClaim chunk'
     create: '&8/&7Lands create &8<&aName&8> - &eCreate land'
-    leave: '&8/&7Lands leave &8- &eLeave chunk or land'
+    leave: '&8/&7Lands leave &8[&aLand] &8- &eLeave chunk or land'
+    unclaim: '&8/&7Lands unclaim &8- &eUnclaim an chunk'
     delete: '&8/&7Lands delete &8<&aLand&8> &8- &eDelete land'
     trust: '&8/&7Lands trust &8<&aPlayer&8> [&ahere&8] - &eInvite player'
     untrust: '&8/&7Lands untrust &8[&ahere&8] - &eUntrust player'
@@ -206,7 +207,8 @@ command:
     max: '&8[&aLands&8] &cYour selection has to many chunks in it. &7Size:&b {current} &7Your allowed size:&b {max}'
     same-world: '&8[&aLands&8] &cBoth positions must be in the same world.'
     claimed: '&8[&aLands&8] &7Successful claimed&b {chunks} &7chunks for this land &8(&7Land:&e {land}&8)&7. You payed&b ${cost}&7.'
-    left: '&8[&aLands&8] &7Successful left&ab {chunks} &7chunks of this land &8(&7Land:&e {land}&8)&7. You got&b ${back} &7back.'
+    left: '&8[&aLands&8] &7Successful left&ab {chunks} &7chunks of this land &8(&7Land:&e {land}&8)&7.'
+    unclaimed: '&8[&aLands&8] &7Successful unclaimed&ab {chunks} &7chunks of this land &8(&7Land:&e {land}&8)&7.'
   claim:
     max-chunks: '&8[&aLands&8] &cYou can''t claim any more chunks. &7Your maximum is&b {max} &7chunks.'
     auto-create: '&8[&aLands&8] &7Trying to auto create an land for you, because you have none in this world. You can change the name of it by executing &8/&aLands rename&7.'
@@ -218,7 +220,8 @@ command:
     land-owner: '&8[&aLands&8] &cYou can''t leave this land. &7As the owner of the land you need to delete it. Use &8/&aLands delete&7.'
     land-success: '&8[&aLands&8] &7Successful left land&b {land}&7. You don''t have any longer access to the land and his chunks.'
     chunk-success: '&8[&aLands&8] &7Successful left this chunk. &7You don''t have any longer access to this chunk.'
-    chunk-deleted: '&8[&aLands&8] &7Successful deleted this chunk &8(&7X:&e {x} &7Z:&e {z}&8)&7.'
+  unclaim:
+    success: '&8[&aLands&8] &7Successful unclaimed this chunk &8(&7X:&e {x} &7Z:&e {z}&8)&7. You got&b ${back} &7back.'
   delete:
     confirm: '&8[&aLands&8] &cYou need to confirm this action. &7Use &8/&aLand delete {land} confirm&7.'
     success: '&8[&aLands&8] &7Successful deleted this land &8(&7Land:&e {land}&8)&7.'

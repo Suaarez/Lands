@@ -1,22 +1,10 @@
-2.7.6.0
-[#] Fixed default lang explanation for
-piston_griefing was wrong. Caused confusion.
+2.7.6.1 Random Teleport Improvements
++ Added support to teleport to negative bounds
+via /Lands wild
 
-Changed to:
+[#] Fixed /Lands wild does teleport to water sometimes,
+even if enabled
 
-      piston_griefing:
-        name: '&bAllow Piston Griefing'
-        lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
-        - ' '
-        - '&7Allow pistons to'
-        - '&7grief blocks?'
-        - ' '
-        - '&8- &7If enabled, players'
-        - '  &7can grief your land from'
-        - '  &7wilderness by using'
-        - '  &7pistons to push blocks.'
-        material: 'PISTON'
-        from: 10
-        to: 18
+[#] Renamed setting preventOcean to preventWater
+
+[#] Fixed Land global settings aren't working

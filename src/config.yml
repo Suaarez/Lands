@@ -932,7 +932,7 @@ randomTeleport:
     allowLand: false
     # Prevent random teleport
     # to ocean?
-    preventOcean: true
+    preventWater: true
     # Cooldown in seconds
     # Set this to 0, if you want to deactivate it.
     cooldown: 300

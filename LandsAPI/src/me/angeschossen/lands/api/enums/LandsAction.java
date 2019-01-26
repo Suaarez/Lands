@@ -16,6 +16,7 @@ public enum LandsAction {
     PLAYER_TRUST_GLOBAL("player_trust", true),
     PLAYER_UNTRUST_GLOBAL("player_untrust", true),
     PLAYER_SETROLE_GLOBAL("player_setrole", true),
+    LAND_SPAWN_GLOBAL("land_spawn", true),
     LAND_CLAIM_GLOBAL("land_claim", true);
 
     private String iD;
