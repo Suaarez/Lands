@@ -290,20 +290,20 @@ land:
           land_rename_global:
             default_57: false
           #
-          # LAND_SETSPAWN
+          # LAND_SPAWN_SET
           #
           # Should visitors be able to
           # set the spawn of an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for setting the spawn.
-          land_setspawn_global:
+          land_spawn_set:
             default_56: false
           #
-          # LAND_SPAWN
+          # LAND_SPAWN_TELEPORT
           #
           # Should admins be able to teleport
           # to land spawn?
-          land_spawn_global:
+          land_spawn_teleport:
             default_62: false
 
       # Members are all players wich
@@ -331,20 +331,20 @@ land:
           land_rename_global:
             default_55: false
           #
-          # LAND_SETSPAWN
+          # LAND_SPAWN_SET
           #
           # Should members be able to
           # set the spawn of an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for setting the spawn.
-          land_setspawn_global:
+          land_spawn_set:
             default_54: false
           #
-          # LAND_SPAWN
+          # LAND_SPAWN_TELEPORT
           #
           # Should admins be able to teleport
           # to land spawn?
-          land_spawn_global:
+          land_spawn_teleport:
             default_63: true
 
       # Admins are members of an land,
@@ -371,20 +371,20 @@ land:
           land_rename_global:
             default_53: false
           #
-          # LAND_SETSPAWN
+          # LAND_SPAWN_SET
           #
           # Should admins be able to
           # set the spawn of an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for setting the spawn.
-          land_setspawn_global:
+          land_spawn_set:
             default_52: false
           #
-          # LAND_SPAWN
+          # LAND_SPAWN_TELEPORT
           #
           # Should admins be able to teleport
           # to land spawn?
-          land_spawn_global:
+          land_spawn_teleport:
             default_64: true
 
 # Chunk settings

@@ -1014,7 +1014,7 @@ gui:
         material: 'IRON_SHOVEL'
         from: 10
         to: 18
-      land_setspawn:
+      land_spawn_set:
         name: '&bSet Landspawn'
         lore:
         - '&7Status: {enabled}'
@@ -1025,7 +1025,7 @@ gui:
         material: 'LEVER'
         from: 10
         to: 18
-      land_spawn:
+      land_spawn_teleport:
         name: '&bTeleport to Spawn'
         lore:
         - '&7Status: {enabled}'

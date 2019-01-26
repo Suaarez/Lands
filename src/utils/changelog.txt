@@ -1,10 +1,4 @@
-2.7.6.1 Random Teleport Improvements
-+ Added support to teleport to negative bounds
-via /Lands wild
-
-[#] Fixed /Lands wild does teleport to water sometimes,
-even if enabled
-
-[#] Renamed setting preventOcean to preventWater
-
-[#] Fixed Land global settings aren't working
+2.7.6.2 Land Spawn Bugfixes
+[#] Fixed admin auto complete
+[#] Fixed land spawn settings
+8#] Fixed edit land value
