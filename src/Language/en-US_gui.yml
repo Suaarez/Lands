@@ -1526,6 +1526,59 @@ gui:
         material: 'GRAY_STAINED_GLASS_PANE'
         from: 1
         to: 27
+  player_info:
+    title: '&8Player {player}'
+    size: 27
+    f:
+      lands:
+        name: '&bLands'
+        lore:
+        - '&e{lands}'
+        material: 'SIGN'
+        slot: 16
+      seen:
+        name: '&bLast seen'
+        lore:
+        - '&c{seen}'
+        material: 'CLOCK'
+        slot: 16
+  land_info:
+    title: '&8Land {land}'
+    size: 27
+    f:
+      chunks:
+        name: '&bChunks'
+        lore:
+        - '&7Size: &e{chunks}'
+        material: 'GRASS_BLOCK'
+        slot: 16
+      owner:
+        name: '&cOwner {player}'
+        lore:
+        - '&7He is the owner of'
+        - '&7this land. Contact'
+        - '&7him, if you have any'
+        - '&7questions.'
+        material: 'PLAYER_HEAD'
+        slot: 16
+      members:
+        name: '&bMembers &8(&7{amount}&8)'
+        lore:
+        - '&e{members}'
+        material: 'PLAYER_HEAD'
+        slot: 16
+      admins:
+        name: '&bAdmins &8(&7{amount}&8)'
+        lore:
+        - '&e{admins}'
+        material: 'PLAYER_HEAD'
+        slot: 16
+      created:
+        name: '&bCreated'
+        lore:
+        - '&e{date}'
+        material: 'PLAYER_HEAD'
+        slot: 16
 
 
 

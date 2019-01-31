@@ -13,12 +13,10 @@ public class LandChunkLeaveEvent extends Event implements Cancellable {
 
     private LandPlayer landPlayer;
     private LandChunk landChunk;
-    private boolean delete;
 
-    public LandChunkLeaveEvent(LandPlayer landPlayer, LandChunk landChunk, boolean delete) {
+    public LandChunkLeaveEvent(LandPlayer landPlayer, LandChunk landChunk) {
         this.landChunk = landChunk;
         this.landPlayer = landPlayer;
-        this.delete = delete;
     }
 
     public LandChunk getLandChunk() {
@@ -27,10 +25,6 @@ public class LandChunkLeaveEvent extends Event implements Cancellable {
 
     public LandPlayer getLandPlayer() {
         return landPlayer;
-    }
-
-    public boolean isDelete() {
-        return delete;
     }
 
     public static HandlerList getHandlerList() {

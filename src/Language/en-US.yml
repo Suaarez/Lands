@@ -42,6 +42,7 @@ general:
   wYes: '&aYes'
   wNo: '&cNo'
   none: '&cNone'
+  wilderness: '&aWilderness'
   time:
     days: 'day(s)'
     hours: 'hour(s)'
@@ -63,8 +64,7 @@ general:
   integration:
     dynmap:
       chunk:
-        title: 'Land {land}'
-        description: 'Land {land}: X: {x} Z: {z} - Owner: {owner}'
+        description: '<div class=\"infowindow\"><span style="font-size:200%;">{land}</span><br/>X: {x} Z: {z}</span><br/> Owner: <span style="font-weight:bold;">{owner}</span><br/>Admins: <span style="font-weight:bold;">{admins}</span><br/>Members: <span style="font-weight:bold;">{members}</span><br/></div>'
   sign:
     topLand:
       line-1: '&6#&e{place}'

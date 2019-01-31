@@ -1,4 +1,9 @@
-2.7.6.2 Land Spawn Bugfixes
-[#] Fixed admin auto complete
-[#] Fixed land spawn settings
-8#] Fixed edit land value
+2.7.6.5
++ Added LandDeleteEvent to API
+Called, if someone deletes his land
+
++ Added cancelable support to all events in API
+
+[#] Fixed /Lands accept saying that an users
+has to many lands but invite targets only an chunk
+of an land.
