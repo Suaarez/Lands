@@ -160,6 +160,11 @@ gui:
         - ' '
         - '&7World:&e {world}'
         - '&7Size:&e {chunks}'
+        - ' '
+        - '&8- &7Use right click to'
+        - '  &7view some general'
+        - '  &7information about this'
+        - '  &7land.'
         material: 'PODZOL'
         from: 10
         to: 18
@@ -169,6 +174,11 @@ gui:
         - ' '
         - '&7World:&e {world}'
         - '&7Size:&e {chunks}'
+        - ' '
+        - '&8- &7Use right click to'
+        - '  &7view some general'
+        - '  &7information about this'
+        - '  &7land.'
         material: 'GRASS_BLOCK'
         from: 10
         to: 18
@@ -1014,6 +1024,19 @@ gui:
         material: 'IRON_SHOVEL'
         from: 10
         to: 18
+      land_claim_border:
+        name: '&bClaim Land at Border'
+        lore:
+        - '&7Status: {enabled}'
+        - '&7Unlocked: {unlocked}'
+        - ' '
+        - '&7Allow this role to'
+        - '&7claim chunks for their'
+        - '&7lands directly at your'
+        - '&7border?'
+        material: 'LEAD'
+        from: 10
+        to: 18
       land_spawn_set:
         name: '&bSet Landspawn'
         lore:
@@ -1461,6 +1484,17 @@ gui:
         from: 15
         to: 18
     a:
+      failure_lands:
+        name: '&4Failure: &bLands Amount'
+        lore:
+        - '&7You can''t join this'
+        - '&7objective, because'
+        - '&7you reached your maximum'
+        - '&7amount of lands you can'
+        - '&7be part of.'
+        - ' '
+        - '&8- &7Your maximum:&e {lands}'
+        material: 'RED_STAINED_GLASS_PANE'
       failure_inviteOwner:
         name: '&4Failure: &bInvite Owner'
         lore:
@@ -1542,43 +1576,68 @@ gui:
         - '&c{seen}'
         material: 'CLOCK'
         slot: 16
-  land_info:
+  land_infos:
     title: '&8Land {land}'
-    size: 27
+    size: 45
     f:
-      chunks:
-        name: '&bChunks'
+      back:
+        name: '&cBack'
         lore:
-        - '&7Size: &e{chunks}'
-        material: 'GRASS_BLOCK'
-        slot: 16
+        - '&7Go back to'
+        - '&eLands&7.'
+        material: 'RED_STAINED_GLASS_PANE'
+        slot: 37
+      close:
+        name: '&cClose'
+        lore:
+        - '&7Close this menu.'
+        - ' '
+        - '&8- &7You can open it again'
+        - '  &7with &8/&aLands info {land}&7.'
+        material: 'RED_STAINED_GLASS_PANE'
+        slot: 9
       owner:
-        name: '&cOwner {player}'
+        name: '&4Owner &7->&b {player}'
         lore:
-        - '&7He is the owner of'
+        - '&7He''s the owner of'
         - '&7this land. Contact'
         - '&7him, if you have any'
         - '&7questions.'
         material: 'PLAYER_HEAD'
-        slot: 16
-      members:
-        name: '&bMembers &8(&7{amount}&8)'
+        slot: 14
+      chunks:
+        name: '&aChunks &8(&7{amount}&8)'
         lore:
-        - '&e{members}'
-        material: 'PLAYER_HEAD'
-        slot: 16
+        - ' '
+        - '&e{chunks}'
+        material: 'GRASS_BLOCK'
+        slot: 30
       admins:
-        name: '&bAdmins &8(&7{amount}&8)'
+        name: '&cAdmins &8(&7{amount}&8)'
         lore:
+        - ' '
         - '&e{admins}'
-        material: 'PLAYER_HEAD'
-        slot: 16
+        material: 'ENCHANTED_GOLDEN_APPLE'
+        slot: 11
+      members:
+        name: '&eMembers &8(&7{amount}&8)'
+        lore:
+        - ' '
+        - '&e{members}'
+        material: 'APPLE'
+        slot: 17
       created:
         name: '&bCreated'
         lore:
         - '&e{date}'
-        material: 'PLAYER_HEAD'
-        slot: 16
+        material: 'CLOCK'
+        slot: 34
+    p:
+      placeholder_1:
+        material: 'GRAY_STAINED_GLASS_PANE'
+        from: 1
+        to: 45
+
 
 
 

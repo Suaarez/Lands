@@ -276,7 +276,7 @@ land:
           # claim land for an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for claiming.
-          land_claim_global:
+          land_claim:
             # Default setting wich will be
             # used, if you create an new land.
             default: false
@@ -287,7 +287,7 @@ land:
           # change the name of an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for renaming.
-          land_rename_global:
+          land_rename:
             default_57: false
           #
           # LAND_SPAWN_SET
@@ -305,6 +305,14 @@ land:
           # to land spawn?
           land_spawn_teleport:
             default_62: false
+          #
+          # LAND_CLAIM_BORDER
+          #
+          # Should visitors be able
+          # to claim land directly at
+          # your border?
+          land_claim_border:
+            default_66: false
 
       # Members are all players wich
       # are trusted in the land and have the member role.
@@ -317,7 +325,7 @@ land:
           # claim land for an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for claiming.
-          land_claim_global:
+          land_claim:
             # Default setting wich will be
             # used, if you create an new land.
             default_5: false
@@ -328,7 +336,7 @@ land:
           # change the name of an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for renaming.
-          land_rename_global:
+          land_rename:
             default_55: false
           #
           # LAND_SPAWN_SET
@@ -346,6 +354,14 @@ land:
           # to land spawn?
           land_spawn_teleport:
             default_63: true
+          #
+          # LAND_CLAIM_BORDER
+          #
+          # Should members be able
+          # to claim land directly at
+          # your border?
+          land_claim_border:
+            default_67: false
 
       # Admins are members of an land,
       # wich have the admin role.
@@ -357,7 +373,7 @@ land:
           # Should admins be able to
           # claim land for an land, where they're not trusted?
           # NOTE: The player will pay the costs for claiming.
-          land_claim_global:
+          land_claim:
             # Default setting wich will be
             # used, if you create an new land.
             default_9: false
@@ -368,7 +384,7 @@ land:
           # change the name of an land, where they're not trusted?
           # NOTE: It's recommended to let this deactivated (false).
           # The player will pay the costs for renaming.
-          land_rename_global:
+          land_rename:
             default_53: false
           #
           # LAND_SPAWN_SET
@@ -386,6 +402,14 @@ land:
           # to land spawn?
           land_spawn_teleport:
             default_64: true
+          #
+          # LAND_CLAIM_BORDER
+          #
+          # Should admins be able
+          # to claim land directly at
+          # your border?
+          land_claim_border:
+            default_68: false
 
 # Chunk settings
 chunk:
@@ -874,6 +898,13 @@ command:
     # If they're trusted or not.
     general_list:
     - EnterCommandToDenyOnLandHere
+  # Sub command settings
+  command:
+    # /Lands info [land]
+    info:
+      # Should Lands open the menu for the
+      # land at your current position, if no land is specified?
+      useLandAtPos: true
 
 
 # Lands GUI settings

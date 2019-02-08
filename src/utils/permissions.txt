@@ -49,12 +49,12 @@ lands.setting.<setting>
 Description: Access to edit chunk setting in GUI.
 Setting name can be found in GUI at "ID:"
 For all settings look here:
-https://github.com/Angeschossen/Lands/blob/master/src/me/angeschossen/lands/api/enums/LandsSetting.java
+https://github.com/Angeschossen/Lands/blob/master/LandsAPI/src/me/angeschossen/lands/api/enums/LandsSetting.java
 
 lands.role.<role>.setting.<setting>
 Description: Access to edit role restrictions in GUI.
 For all role settings look here:
-https://github.com/Angeschossen/Lands/blob/master/src/me/angeschossen/lands/api/enums/LandsAction.java
+https://github.com/Angeschossen/Lands/blob/master/LandsAPI/src/me/angeschossen/lands/api/enums/LandsAction.java
 
 
 Bypass permissions:

@@ -1,7 +1,7 @@
 package me.angeschossen.lands.api.events;
 
 import me.angeschossen.lands.api.objects.Land;
-import me.angeschossen.lands.datastore.objects.LandPlayerD;
+import me.angeschossen.lands.api.objects.LandPlayer;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
@@ -11,10 +11,10 @@ public class LandCreateEvent extends Event implements Cancellable {
     public static HandlerList handlerList = new HandlerList();
     private boolean cancelled;
 
-    private LandPlayerD landPlayer;
+    private LandPlayer landPlayer;
     private Land land;
 
-    public LandCreateEvent(LandPlayerD landPlayer, Land land) {
+    public LandCreateEvent(LandPlayer landPlayer, Land land) {
         this.land = land;
         this.landPlayer = landPlayer;
     }
@@ -23,7 +23,7 @@ public class LandCreateEvent extends Event implements Cancellable {
         return land;
     }
 
-    public LandPlayerD getLandPlayer() {
+    public LandPlayer getLandPlayer() {
         return landPlayer;
     }
 

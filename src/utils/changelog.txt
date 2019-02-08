@@ -1,9 +1,3 @@
-2.7.6.5
-+ Added LandDeleteEvent to API
-Called, if someone deletes his land
-
-+ Added cancelable support to all events in API
-
-[#] Fixed /Lands accept saying that an users
-has to many lands but invite targets only an chunk
-of an land.
+2.7.8.0
+[#] Fixed missing message: /Lands untrust
+[#] Fixed placeholder at /Lands untrust

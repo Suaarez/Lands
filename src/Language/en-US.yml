@@ -109,6 +109,7 @@ help:
     rename: '&8/&7Lands rename <&aName&8> - &eRename land'
     teleport: '&8/&7Lands teleport &8[&aWorld&8] <&aX&8> <&aZ&8> - &eTeleport to chunk'
     invites: '&8/&7Lands invites &8- &eShow received invites'
+    info: '&8/&7Lands info &8[&aLand&8] - &eView information about land'
     admin:
       admin: '&8/&7Lands admin &8<&aAction&8> &8- &eAdmin commands'
       debug: '&8/&7Lands debug &8- &eShows loaded data stats'
@@ -191,6 +192,7 @@ command:
     cmd-not-exist: '&8[&aLands&8] &cThis subcommand doesn''t exist. &7Command&b {command} &7wasn''t found.'
     page-not-exist: '&8[&eProtect&8] &cThe page&e {page} &cdoesn''t exist. &7Typo?'
   create:
+    land-other: '&8[&aLands&8] &cYou''re not allowed to have your own land and be member of an other land. &7You need to leave land&b {land} &7first. An administrator can disable this in config.'
     max-own: '&8[&aLands&8] &cYou can''t create any more lands. &7You reached your maximum of&b {max} &7own lands.'
     success: '&8[&aLands&8] &7Successful created land&b {land} &7for&b {cost}&7. You can claim chunks by executing &8/&aLands claim&7.'
     broadcast: '&8[&aLands&8] &7Land&b {land} &7was created by&b {player}&7.'
