@@ -370,7 +370,41 @@
           lands.admin.command.*:
             description: Access to all admin commands
             default: false
-            children: 
+            children:
               lands.admin.command.reload:
                 description: Access to /Lands reload
+                default: false
+              lands.admin.command.land.*:
+                description: Access to admin land commands
+                default: false
+                children:
+                  lands.admin.command.land.delete:
+                    description: Delete land
+                    default: false
+                  lands.admin.command.land.edit:
+                    description: Open GUI for land
+                    default: false
+                  lands.admin.command.land.trust:
+                    description: Trust players to land
+                    default: false
+                  lands.admin.command.land.untrust:
+                    description: Untrust players from land
+                    default: false
+                  lands.admin.command.land.rename:
+                    description: Rename land
+                    default: false
+                  lands.admin.command.land.settings.reset:
+                    description: Reset settings of land
+                    default: false
+                  lands.admin.command.land.setowner:
+                    description: Set new owner for land
+                    default: false
+              lands.admin.command.give.claimblock:
+                description: Give claimblocks to player
+                default: false
+              lands.admin.command.import:
+                description: Import data from other plugins
+                default: false
+              lands.admin.command.safezone:
+                description: Edit safezones
                 default: false
