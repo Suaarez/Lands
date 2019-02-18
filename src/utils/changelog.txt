@@ -1,3 +1,8 @@
-2.7.8.0
-[#] Fixed missing message: /Lands untrust
-[#] Fixed placeholder at /Lands untrust
+2.7.8.1 Fixes
+[#] Fixed potentially file open error
+
+[#] Changed permissions for /Lands admin
+to lands.admin.command.<subcommand>
+
+[#] Changed permission for /Lands safezone
+to lands.admin.command.safezone
