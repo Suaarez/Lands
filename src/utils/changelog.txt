@@ -1,11 +1,4 @@
-2.7.8.1 Fixes and Improvements
-[#] Fixed potentially file open error
-
-[#] Changed permissions for /Lands admin
-to lands.admin.command.<subcommand>
-
-[#] Changed permission for /Lands safezone
-to lands.admin.command.safezone
-
-[#] Added permission descriptions for other plugins
-to read
+2.7.8.9 Dynamp Integration Improvements
+[#] Fixed Dynmap shows Admins as Members
+[#] Fixed names are displayed lowercase
+[#] Fixed space between chunks in Dynmap

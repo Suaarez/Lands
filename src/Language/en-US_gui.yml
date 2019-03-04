@@ -1255,7 +1255,7 @@ gui:
       tax:
         name: '&bTax:&7 {tax}'
         lore:
-        - '&7Next tax is in&b {next} &7days.'
+        - '&7Next tax is in&b {next}&7.'
         - '&7Is total: {total}'
         - ' '
         - '&8- &7Click here to change'
@@ -1276,6 +1276,26 @@ gui:
         - '  &7values of the chunks.'
         material: 'GOLD_INGOT'
         slot: 14
+    a:
+      failure_maxValue:
+        name: '&4Max Value reached'
+        lore:
+        - '&7You can''t set the tax'
+        - '&7value higher than&b {max}&7.'
+        - ' '
+        - '&8- &7You can ask an administrator'
+        - '  &7to change this.'
+        material: 'GLOWSTONE_DUST'
+      failure_cooldown:
+        name: '&4Cooldown:&c You need to wait.'
+        lore:
+        - '&7You currently can''t change the'
+        - '&7tax value. You need to wait'
+        - '&b{time} &7hours.'
+        - ' '
+        - '&8- &7You can ask an administrator'
+        - '  &7to change this.'
+        material: 'GLOWSTONE_DUST'
     p:
       placeholder_1:
         material: 'GRAY_STAINED_GLASS_PANE'

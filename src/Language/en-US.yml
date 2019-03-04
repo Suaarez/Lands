@@ -285,6 +285,7 @@ command:
     loc-unsafe: '&8[&aLands&8] &cCouldn''t find an safe location for you. &7Please try again later. If that doesn''t help, contact an administrator.'
     success: '&8[&aLands&8] &7You were random teleported &8(&7X:&e {x} &7Z:&e {z}&8)&7.'
   menu:
+    no-permission-other: '&8[&aLands&8] &cYou''re not allowed to open other players GUIs. &7You need permission&e lands.command.menu.others &7to do that.'
     notExist: '&8[&aLands&8] &cThis player currently doesn''t have any data.'
   chat:
     format: '&8[&aLands&8] [&d{land}&8] {role} &7{player}&8:&f {message}'

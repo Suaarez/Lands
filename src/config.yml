@@ -155,6 +155,16 @@ taxes:
   # NOTE: You economy plugin
   # must be able to handle Vault banks.
   landBank: false
+  # Set the min. time between
+  # an change at the tax value
+  # and that players need to pay tax
+  # NOTE: Timeunit is seconds
+  # It's calculated by:
+  # next tax - cooldown
+  # If current time is in
+  # this period, the player
+  # cant higher the tax
+  changeCooldown: 302400
   # Land taxes settings
   land:
     # Remove a land member
@@ -162,6 +172,8 @@ taxes:
     # This affects members
     # wich are trusted in the whole land.
     removeMember: true
+    # Set max tax value for land
+    maxTax: 1000.0
   # Chunk taxes settings
   chunk:
     # Remove a chunk member
@@ -169,6 +181,8 @@ taxes:
     # This affects members
     # wich are only trusted in specific chunks of the land.
     removeMember: true
+    # Set max tax value for chunk
+    maxTax_2: 1000.0
 
 # Land settings
 land:
