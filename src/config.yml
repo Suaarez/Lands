@@ -18,6 +18,7 @@ general:
   # Pre configured language
   # Already translated:
   # English (en-US)
+  # French (fr-Fr) by Kittle
   language: 'en-US'
   # This will send an message
   # to console, if plugin enables
@@ -52,7 +53,7 @@ general:
     - world
     # Should players be able to build in wilderness?
     # Info: If you have build bypass
-    # permissions you still can build
+    # permissions, you still can build
     # in wilderness (Good for staff for example).
     disallowWilderness: false
     # Should safezones stay in cache
@@ -1016,10 +1017,6 @@ integration:
       # Materials can be found here:
       # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
       item_42: 'DIAMOND'
-
-    # CoinsApi (Link: www.spigotmc.org/resources/49944)
-    CoinsApi:
-      enabled_9: true
 
     # Vault
     # An economy plugin is also needed to let this work.

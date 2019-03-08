@@ -1,4 +1,7 @@
-2.7.8.9 Dynamp Integration Improvements
-[#] Fixed Dynmap shows Admins as Members
-[#] Fixed names are displayed lowercase
-[#] Fixed space between chunks in Dynmap
+2.7.9.0 Interaction Hotfixes
++ Added French translation by Kittle
+
+[#] Fixed untrusted players can trample crops
+[#] Fixed interact mechanism setting not working
+for pressure plates
+[#] Improved /lands wild for nether and end usage
