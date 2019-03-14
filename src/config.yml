@@ -52,7 +52,7 @@ general:
     - world
     # Should players be able to build in wilderness?
     # Info: If you have build bypass
-    # permissions you still can build
+    # permissions, you still can build
     # in wilderness (Good for staff for example).
     disallowWilderness: false
     # Should safezones stay in cache

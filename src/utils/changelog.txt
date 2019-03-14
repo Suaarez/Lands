@@ -1,4 +1,6 @@
-2.7.8.9 Dynamp Integration Improvements
-[#] Fixed Dynmap shows Admins as Members
-[#] Fixed names are displayed lowercase
-[#] Fixed space between chunks in Dynmap
+2.7.9.2 Disallow Wilderness Bugfixes
++ Added missing message to
+/Lands untrust PLAYER here
+
+[#] Fixed player can trample crops, if
+disallowWilderness is enabled.
