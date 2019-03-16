@@ -1,6 +1,7 @@
-2.7.9.2 Disallow Wilderness Bugfixes
-+ Added missing message to
-/Lands untrust PLAYER here
+2.7.9.3 Added Player Info GUI
++ Added player info GUI
 
-[#] Fixed player can trample crops, if
-disallowWilderness is enabled.
++ Added command /Lands player
+With this command you can open the player info GUI
+
++ Added help message: /Lands player

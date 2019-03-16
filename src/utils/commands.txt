@@ -6,10 +6,6 @@ Land claim
   Description: Claim a chunk to land
   Permission: lands.command.claim
 
-Land claim selection
-  Description: Claim a chunk selection to land
-  Permission: lands.command.claim.selection
-
 Land create:
   Description: Create a land
   Permission: lands.command.create
@@ -17,6 +13,11 @@ Land create:
 Land help:
   Description: Display commands etc.
   Permission: lands.command.help
+
+Land selection
+  Description: Enable selection mode. With this you can do actions like /Lands claim, /Lands trust, /Lands untrust,
+               which will only affect the selection.
+  Permission: lands.command.selection
 
 Land trust:
   Description: Invite a player to land or chunk

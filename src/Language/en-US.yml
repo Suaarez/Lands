@@ -109,6 +109,7 @@ help:
     teleport: '&8/&7Lands teleport &8[&aWorld&8] <&aX&8> <&aZ&8> - &eTeleport to chunk'
     invites: '&8/&7Lands invites &8- &eShow received invites'
     info: '&8/&7Lands info &8[&aLand&8] - &eView information about land'
+    player: '&8/&7Lands player &8<&aPlayer&8> - &eView information about player'
     admin:
       admin: '&8/&7Lands admin &8<&aAction&8> &8- &eAdmin commands'
       debug: '&8/&7Lands debug &8- &eShows loaded data stats'

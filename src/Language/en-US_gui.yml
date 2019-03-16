@@ -1583,19 +1583,34 @@ gui:
   player_info:
     title: '&8Player {player}'
     size: 27
-    f:
-      lands:
-        name: '&bLands'
+    s:
+      close:
+        name: '&cClose'
         lore:
-        - '&e{lands}'
-        material: 'SIGN'
-        slot: 16
-      seen:
+        - '&7Close this menu.'
+        - ' '
+        - '&8- &7You can open it again'
+        - '  &7with &8/&aLands player'
+        material: 'RED_STAINED_GLASS_PANE'
+        slot: 9
+    f:
+      last_seen:
         name: '&bLast seen'
         lore:
-        - '&c{seen}'
+        - '&c{last-seen}'
         material: 'CLOCK'
+        slot: 12
+      lands:
+        name: '&bLands &8(&7{amount}&8)'
+        lore:
+        - '{lands}'
+        material: 'SIGN'
         slot: 16
+    p:
+      placeholder_1:
+        material: 'GRAY_STAINED_GLASS_PANE'
+        from: 1
+        to: 27
   land_infos:
     title: '&8Land {land}'
     size: 45

@@ -43,10 +43,10 @@ general:
   none: '&cKeiner'
   wilderness: '&aWildnis'
   time:
-    days: Tag(e)
-    hours: Stunde(n)
-    minutes: Minute(n)
-    seconds: Sekunde(n)
+    days: 'Tag(e)'
+    hours: 'Stunde(n)'
+    minutes: 'Minute(n)'
+    seconds: 'Sekunde(n)'
   status:
     online: '&aOnline'
     offline: '&cOffline'
