@@ -171,7 +171,7 @@ command:
     land-not-member: '&8[&aLands&8] &cYou''re not trusted in land&e {land}&c. &7Use &8/&aLands menu &7to see the lands you''re member of.'
     land-not-part: '&8[&aLands&8] &cYou can''t do that. &7Player&b {player} &7isn''t part of this land &8(&7Land:&e {land}&8)&7. You need to trust him first using &8/&aLands trust&7.'
     land-no-action: '&8[&aLands&8] &cYou''re not member of an land where you''re allowed to do this. &7Use &8/&aLand create &7to create one.'
-    name-exists: '&8[&aLands&8] &cThis name is already taken by an other land. &7You need to choose an different one.'
+    name-exists: '&8[&aLands&8] &cThis name is already taken by an other land. &7You need to choose a different one.'
     money-cost: '&8[&aLands&8] &cYou don''t have enough to pay the cost. &7You need&b ${cost}&7.'
     lands-max: '&8[&aLands&8] &cYou can''t be part of any more lands. &7You reached your maximum of&b {max} &7lands.'
     name-numbers: '&8[&aLands&8] &cYou can''t use numbers in your landname. &7Please use only latin letters.'

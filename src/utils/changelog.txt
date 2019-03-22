@@ -1,7 +1,8 @@
-2.7.9.3 Added Player Info GUI
-+ Added player info GUI
+2.7.9.7 Added Safezone Rename Support
++ Now you can rename safezones
 
-+ Added command /Lands player
-With this command you can open the player info GUI
++ Added /Lands safezone rename command
 
-+ Added help message: /Lands player
++ Added nether and end support for /Lands wild
+
+[#] Improved wild handler
