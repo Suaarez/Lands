@@ -1149,7 +1149,7 @@ gui:
         from: 10
         to: 18
       piston_griefing:
-        name: '&bDugatty\u00FAk a vadonb\u00F3l'
+        name: '&bDugattyuk a vadonbol'
         lore:
         - '&7Állapot: {enabled}'
         - '&7Feloldva: {unlocked}'
