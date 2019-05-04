@@ -1149,7 +1149,7 @@ gui:
         from: 10
         to: 18
       piston_griefing:
-        name: '&bDugattyúk a vadonból'
+        name: '&bDugatty\u00FAk a vadonb\u00F3l'
         lore:
         - '&7Állapot: {enabled}'
         - '&7Feloldva: {unlocked}'
@@ -1157,26 +1157,26 @@ gui:
         - '&7Engedélyezed a dugattyúkat'
         - '&7a vadonból?'
         - ' '
-          - '&8- &7Ha ezt engedélyezed'
-          - '  &7rombolhatnak dugattyúkkal'
-          - '  &7a telkeden a határokon'
-          - '  &7kívülről.'
+        - '&8- &7Ha ezt engedélyezed'
+        - '  &7rombolhatnak dugattyúkkal'
+        - '  &7a telkeden a határokon'
+        - '  &7kívülről.'
         material: 'PISTON'
         from: 10
         to: 18
       waterflow_allow:
         name: '&bVíz befolyása a vadonból'
         lore:
-          - '&7Állapot: {enabled}'
-          - '&7Feloldva: {unlocked}'
-          - ' '
-          - '&7Engedélyezed víz befolyását'
-          - '&7a vadonról a telkedre?'
-          - ' '
-          - '&8- &7Ha ezt engedélyezed'
-          - '  &7rombolhatnak vízzel'
-          - '  &7a telkeden a határokon'
-          - '  &7kívülről.'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
+        - ' '
+        - '&7Engedélyezed víz befolyását'
+        - '&7a vadonról a telkedre?'
+        - ' '
+        - '&8- &7Ha ezt engedélyezed'
+        - '  &7rombolhatnak vízzel'
+        - '  &7a telkeden a határokon'
+        - '  &7kívülről.'
         material: 'WATER_BUCKET'
         from: 10
         to: 18
@@ -1689,11 +1689,3 @@ gui:
         material: 'GRAY_STAINED_GLASS_PANE'
         from: 1
         to: 45
-
-
-
-
-
-
-
-
