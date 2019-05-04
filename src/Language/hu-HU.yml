@@ -285,8 +285,8 @@ command:
     force-land: '&8[&aLands&8] &cCsak a saját területedre rakhatsz teleport pontot.'
     success: '#t#&7Teleport pont &abeállítva&7.;;&7Ár:&b {cost}'
   spawn:
-    not-exist: '&8[&aLands&8] &cThere''s no spawn set for land&e {land}&c. &7Someone needs to set it first by executing &8/&aLand setSpawn&7.'
-    not-allowed: '&8[&aLands&8] &cYou''re not allowed to teleport to the spawn of this land. &7The owner needs to give you permission to do so. Contact him for assistance &8(&7Teleknév:&e {land}&8)&7.'
+    not-exist: '&8[&aLands&8] &cNincs teleportálási cél beállítva:&e {land}&c. &7Valakinek be kell állítania a &8/&aLand setSpawn&7 parancs használatával.'
+    not-allowed: '&8[&aLands&8] &cNem teleportálhatsz a telekre. &7A tulajnak jogot kell adnia rá, vedd fel vele a kapcsolatot &8(&7Teleknév:&e {land}&8)&7.'
     success: '#t#&7Teleported to;;&7Teleknév&b {land}'
   wild:
     searching: '#t#&7Keresés:;;&dVéletlen célpont'
