@@ -483,8 +483,8 @@ gui:
       invite:
         name: '&8Meghívó &7->&a {player}'
         lore:
-        - '&7Edit this invite or'
-        - '&7just view information.'
+        - '&7Szerkesztheted a meghívót'
+        - '&7vagy információkat láthatsz róla.'
         material: 'BOOK'
         from: 10
         to: 27
@@ -515,7 +515,7 @@ gui:
       revoke:
         name: '&bMeghívó visszavonása'
         lore:
-        - '&7It visszavonhatod'
+        - '&7Itt visszavonhatod'
         - '&7ezt a meghívót.'
         material: 'ROSE_RED'
         slot: 12
@@ -560,7 +560,7 @@ gui:
         name: '&cAdmin'
         lore:
         - '&7Kattints ide a szerkesztéshez'
-        - '&7vagy csak nézd az adminokat.'
+        - '&7vagy csak listázd az adminokat.'
         - ' '
         - '&8- &7A játékosnak'
         - '  &7lehet admin joga'
@@ -571,7 +571,7 @@ gui:
         name: '&eTag'
         lore:
         - '&7Kattints ide a szerkesztéshez'
-        - '&7vagy csak nézd a tagokat.'
+        - '&7vagy csak listázd a tagokat.'
         - ' '
         - '&8- &7Players can also'
         - '  &7be trusted in'
@@ -589,7 +589,7 @@ gui:
         name: '&cVissza'
         lore:
         - '&7Vissza az'
-        - '&eObjektumokhoz&7.'
+        - '&eElőző menübe.'
         material: 'RED_STAINED_GLASS_PANE'
         slot: 19
     f:
@@ -744,34 +744,31 @@ gui:
       taxes:
         name: '&bAdók'
         lore:
-        - '&7Edit taxes for'
-        - '&7this objective.'
+        - '&7Adók szerkesztése'
         - ' '
-        - '&8- &7Players, which are'
-        - '  &7trusted in the whole'
-        - '  &7land, won''t pay the'
-        - '  &7tax value from chunks.'
-        - '  &7They pay the value of'
-        - '  &7this land.'
-        - '&8- &7Players, which are'
-        - '  &7trusted in certain chunks,'
-        - '  &7will only pay the tax'
-        - '  &7values of the chunks.'
+        - '&8- &7Az egész telekhez'
+        - '  &7adott játékosok'
+        - '  &7nem chunk adót fizetnek'
+        - '  &7hanem telek adót.'
+        - '&8- &7A csak bizonyos'
+        - '  &7chunkokhoz adott játékosok,'
+        - '  &7az adott chunkok adóit'
+        - '  &7fizetik.'
         material: 'GOLD_NUGGET'
         slot: 15
       land:
-        name: '&bLand Settings'
+        name: '&bTelek beállítások'
         lore:
-        - '&7Edit land settings like'
-        - '&7mob spawning or endity griefing'
-        - '&7for this objective.'
+        - '&7Telek beállítások szerkesztése'
+        - '&7mint pl.: mob spawnolás'
+        - '&7vagy blokk törés.'
         material: 'GRASS_BLOCK'
         slot: 17
       back:
         name: '&cVissza'
         lore:
-        - '&7Vissza a'
-        - '&eObjective&7.'
+        - '&7Vissza az'
+        - '&eElőző menübe.'
         material: 'RED_STAINED_GLASS_PANE'
         slot: 19
     p:
@@ -780,14 +777,14 @@ gui:
         from: 1
         to: 27
   settings_role:
-    title: '&8Settings &7-> {role}'
+    title: '&8Beállítások &7-> {role}'
     size: 36
     s:
       back:
         name: '&cVissza'
         lore:
         - '&7Vissza a'
-        - '&eSelect Role&7.'
+        - '&eJogkörök kiválasztásához&7.'
         material: 'RED_STAINED_GLASS_PANE'
         slot: 28
     f:
@@ -809,176 +806,180 @@ gui:
         slot: 34
     l:
       block_break:
-        name: '&bBreak Blocks'
+        name: '&bBlokk törés'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7break blocks?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy blokkokat törjön?'
         material: 'IRON_PICKAXE'
         from: 10
         to: 27
       block_place:
-        name: '&bPlace Blocks'
+        name: '&bBlokk lerakás'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7place blocks?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy blokkokat rakjon le?'
         material: 'STONE'
         from: 10
         to: 27
       block_ignite:
-        name: '&bBlock Ignite'
+        name: '&bBlokkok felgyújtása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7ignite blocks?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7felgyújtson blokkokat?'
         material: 'FLINT_AND_STEEL'
         from: 10
         to: 27
       interact_general:
-        name: '&bGeneral Interaction'
+        name: '&bÁltalános használat'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7interact?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy használjon dolgokat?'
+        - '&7(pl.: barkácsasztal, üllő, páncél állvány)'
         material: 'STRING'
         from: 10
         to: 27
       interact_door:
-        name: '&bOpen Doors'
+        name: '&bAjtók nyitása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7open doors?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy ajtókat nyisson?'
         material: 'IRON_DOOR'
         from: 10
         to: 27
       interact_container:
-        name: '&bOpen Containers'
+        name: '&bTárolók megnyitása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7open containers?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7tárolókat nyisson meg?'
+        - '&7(pl.: láda, sütő stb.)'
         material: 'CHEST'
         from: 10
         to: 27
       interact_mechanism:
-        name: '&bUse Levers'
+        name: '&bRedstone használata'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7use levers etc.?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy redstone kapcsolókat, gombokat stb.?'
+        - '&7használjon?'
         material: 'REDSTONE'
         from: 10
         to: 27
       attack_player:
-        name: '&bAttack Players'
+        name: '&bJátékosok megtámadása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7attack players?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy játékosokat támadjon meg?'
         - ' '
-        - '&8- &7They can only attack'
-        - '  &7players which can'
-        - '  &7also acctack them.'
+        - '&8- &7Csak azokat támadhatják'
+        - '  &7meg, akik őket is'
+        - '  &7megtámadhatják.'
         material: 'IRON_SWORD'
         from: 10
         to: 27
       attack_animal:
-        name: '&bAttack Animals'
+        name: '&bÁllatok megtámadása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7attack animals?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy állatokat támadjon meg?'
         material: 'BOW'
         from: 10
         to: 27
       player_trust:
-        name: '&bTrust Players'
+        name: '&bJátékos hozzáadása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7trust other players?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy játékosokat adjon hozzá?'
         material: 'CACTUS_GREEN'
         from: 10
         to: 27
       player_setRole:
         name: '&bSet Roles'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
+        - '&7Engedélyezed a jogkörnek'
         - '&7set roles for players?'
         - ' '
-        - '&8- &7They won''t be bale to'
-        - '  &7edit players which have'
-        - '  &7an higher role.'
-        - '&8- &7Also they won''t be able'
-        - '  &7to set an role which is'
-        - '  &7higher than their own role.'
+        - '&8- &7Nem tudják majd a náluk'
+        - '  &7magasabb jogkör játékosait'
+        - '  &7módosítani.'
+        - '&8- &7Emellett nem tudják majd'
+        - '  &7magasabb jogkörbe léptetni'
+        - '  &7magukat.'
         material: 'CYAN_DYE'
         from: 10
         to: 27
       player_untrust:
-        name: '&bEltávolít Players'
+        name: '&bJátékosok eltávolítása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7untrust players?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy játékosokat távolítson el?'
         - ' '
-        - '&8- &7They won''t be able'
-        - '  &7to untrust players which'
-        - '  &7have an higher role.'
+        - '&8- &7Nem tudják majd a náluk'
+        - '  &7magasabb jogkör játékosait'
+        - '  &7eltávolítani.'
         material: 'ROSE_RED'
         from: 10
         to: 27
       setting_edit:
-        name: '&bEdit Land Settings'
+        name: '&bTelek beállítások szerkesztése'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7edit land settings?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy telekbeállításokat módosítson?'
         - ' '
-        - '&8- &7They won''t be'
-        - '  &7able to edit their'
-        - '  &7own role settings.'
+        - '&8- &7Így nem tudják majd'
+        - '  &7módosítani a saját'
+        - '  &7jogkör beállításaikat.'
         material: 'COMMAND_BLOCK'
         from: 10
         to: 27
     a:
       failure_permission:
-        name: '&4Failure: &cNo permission'
+        name: '&4Hiba: &cNincs jog'
         lore:
-        - '&7You''re not allowed to'
-        - '&7edit this setting.'
+        - '&7Nem szerkesztheted'
+        - '&7ezt a beállítást.'
         - ' '
-        - '&8- &7You need permission'
+        - '&8- &7Szükséged van a'
         - '  &e{permission}&7.'
+        - '  &7jogra.'
         material: 'RED_STAINED_GLASS_PANE'
     p:
       placeholder_1:
@@ -990,14 +991,14 @@ gui:
         from: 29
         to: 36
   settings_role_advanced:
-    title: '&8Advanced Settings &7-> {role}'
+    title: '&8Részletes beállítások &7-> {role}'
     size: 27
     s:
       back:
         name: '&cVissza'
         lore:
         - '&7Vissza a'
-        - '&eSelect Role&7.'
+        - '&eJogkör kiválasztásához&7.'
         material: 'RED_STAINED_GLASS_PANE'
         slot: 19
     f:
@@ -1019,71 +1020,72 @@ gui:
         slot: 25
     l:
       land_claim:
-        name: '&bClaim Land'
+        name: '&bChunk levédés'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7claim chunks for this land?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7chunkokat adjon a telkedhez?'
         material: 'IRON_SHOVEL'
         from: 10
         to: 18
       land_claim_border:
-        name: '&bClaim Land at Border'
+        name: '&bLevédés a telekhatárnál'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7claim chunks for their'
-        - '&7lands directly at your'
-        - '&7border?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy területet'
+        - '&7védjen le a tied'
+        - '&7mellett?'
         material: 'LEAD'
         from: 10
         to: 18
       land_spawn_set:
-        name: '&bSet Landspawn'
+        name: '&bTelek teleport pont beállítása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7edit the spawnpoint of this land?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy szerkessze a telek teleport pontját?'
         material: 'LEVER'
         from: 10
         to: 18
       land_spawn_teleport:
-        name: '&bTeleport to Spawn'
+        name: '&bTeleportálás a telkre'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7teleport to the land spawn?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy teleportáljon a telkedre?'
         material: 'ENDER_PEARL'
         from: 10
         to: 18
       land_rename:
-        name: '&bRename Land'
+        name: '&bTelek átnevezése'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow this role to'
-        - '&7rename this land?'
+        - '&7Engedélyezed a jogkörnek'
+        - '&7hogy átnevezze a telked?'
         material: 'NAME_TAG'
         from: 10
         to: 18
     a:
       failure_permission:
-        name: '&4Failure: &cNo permission'
+        name: '&4Hiba: &cNincs jog'
         lore:
-        - '&7You''re not allowed to'
-        - '&7edit this setting.'
+        - '&7Nincs jogod'
+        - '&7szerkeszteni a beállítást.'
         - ' '
-        - '&8- &7You need permission'
+        - '&8- &7Szükséged van a'
         - '  &e{permission}&7.'
+        - '  &7jogra.'
         material: 'RED_STAINED_GLASS_PANE'
     p:
       placeholder_1:
@@ -1096,7 +1098,7 @@ gui:
         to: 27
 
   settings_land:
-    title: '&8Land Settings'
+    title: '&8Telek beállítások'
     size: 27
     s:
       back:
@@ -1125,91 +1127,91 @@ gui:
         slot: 25
     l:
       entity_griefing:
-        name: '&bEntity Griefing'
+        name: '&bSzörny rombolás'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow entities to'
-        - '&7grief blocks?'
+        - '&7Engedélyezed szörnyeknek a'
+        - '&7blokkok módosítását? (pl.: Creeper, Enderman)'
         material: 'CREEPER_HEAD'
         from: 10
         to: 18
       tnt_griefing:
-        name: '&bTNT Griefing'
+        name: '&bTNT'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow TNT blocks to'
-        - '&7destroy blocks?'
+        - '&7Engedélyezed a TNT'
+        - '&7blokk rombolását?'
         material: 'TNT'
         from: 10
         to: 18
       piston_griefing:
-        name: '&bAllow Pistons from Wilderness'
+        name: '&bDugattyúk a vadonból'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow pistons to'
-        - '&7grief blocks?'
+        - '&7Engedélyezed a dugattyúkat'
+        - '&7a vadonból?'
         - ' '
-        - '&8- &7If enabled, players'
-        - '  &7can grief your land from'
-        - '  &7wilderness by using'
-        - '  &7pistons to push blocks'
-        - '  &7inside your land.'
+          - '&8- &7Ha ezt engedélyezed'
+          - '  &7rombolhatnak dugattyúkkal'
+          - '  &7a telkeden a határokon'
+          - '  &7kívülről.'
         material: 'PISTON'
         from: 10
         to: 18
       waterflow_allow:
-        name: '&bAllow Water from Wilderness'
+        name: '&bVíz befolyása a vadonból'
         lore:
-          - '&7Status: {enabled}'
-          - '&7Unlocked: {unlocked}'
+          - '&7Állapot: {enabled}'
+          - '&7Feloldva: {unlocked}'
           - ' '
-          - '&7Allow water from wilderness'
-          - '&7to flow into your land?'
+          - '&7Engedélyezed víz befolyását'
+          - '&7a vadonról a telkedre?'
           - ' '
-          - '&8- &7If enabled, players'
-          - '  &7can grief your land from'
-          - '  &7wilderness by using'
-          - '  &7water.'
+          - '&8- &7Ha ezt engedélyezed'
+          - '  &7rombolhatnak vízzel'
+          - '  &7a telkeden a határokon'
+          - '  &7kívülről.'
         material: 'WATER_BUCKET'
         from: 10
         to: 18
       monster_spawn:
-        name: '&bMonster Spawning'
+        name: '&bSzörnyek spawnolása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow monsters to'
-        - '&7spawn?'
+        - '&7Engedélyezed a szörnyek'
+        - '&7spawnolását?'
         material: 'SPAWNER'
         from: 10
         to: 18
       animal_spawn:
-        name: '&bAnimal Spawning'
+        name: '&bÁllatok spawnolása'
         lore:
-        - '&7Status: {enabled}'
-        - '&7Unlocked: {unlocked}'
+        - '&7Állapot: {enabled}'
+        - '&7Feloldva: {unlocked}'
         - ' '
-        - '&7Allow animals to'
-        - '&7spawn?'
+        - '&7Engedélyezed az állatok'
+        - '&7spawnolását?'
         material: 'TALL_GRASS'
         from: 10
         to: 18
     a:
       failure_permission:
-        name: '&4Failure: &cNo permission'
+        name: '&4Hiba: &cNincs jog'
         lore:
-        - '&7You''re not allowed to'
-        - '&7edit this setting.'
+        - '&7Nem szerkesztheted'
+        - '&7ezeket a beállításokat.'
         - ' '
-        - '&8- &7You need permission'
+        - '&8- &7Szükséged van a'
         - '  &e{permission}&7.'
+        - '  &7jogra'
         material: 'RED_STAINED_GLASS_PANE'
     p:
       placeholder_1:
@@ -1221,102 +1223,100 @@ gui:
         from: 19
         to: 27
   settings_taxes:
-    title: '&8Taxes'
+    title: '&8Adók'
     size: 27
     s:
       plus_1:
-        name: '&aAdd $1'
+        name: '&aHozzáad $1'
         lore:
-        - '&7Add $1 to'
-        - '&7tax value.'
+        - '&7Hozzáadsz $1-t'
+        - '&7az adóhoz.'
         material: 'GLOWSTONE_DUST'
         slot: 11
       plus_100:
-        name: '&aAdd $100'
+        name: '&aHozzáad $100'
         lore:
-        - '&7Add $100 to'
-        - '&7tax value.'
+        - '&7Hozzáadsz $100-t'
+        - '&7az adóhoz.'
         material: 'GLOWSTONE_DUST'
         slot: 12
       plus_1000:
-        name: '&aAdd $1000'
+        name: '&aHozzáad $1000'
         lore:
-        - '&7Add $1000 to'
-        - '&7tax value.'
+        - '&7Hozzáadsz $1000-t'
+        - '&7az adóhoz.'
         material: 'GLOWSTONE_DUST'
         slot: 13
       minus_1000:
-        name: '&cRemove $1000'
+        name: '&cElvesz $1000'
         lore:
-        - '&7Remove $1000 from'
-        - '&7tax value.'
+        - '&7Elveszel $1000-t'
+        - '&7az adóból.'
         material: 'REDSTONE'
         slot: 15
       minus_100:
-        name: '&cRemove $100'
+        name: '&cElvesz $100'
         lore:
-        - '&7Remove $100 from'
-        - '&7tax value.'
+        - '&7Elveszel $100-t'
+        - '&7az adóból.'
         material: 'REDSTONE'
         slot: 16
       minus_1:
-        name: '&cRemove $1'
+        name: '&cElvesz: $1'
         lore:
-        - '&7Remove $1 from'
-        - '&7tax value.'
+        - '&7Elveszel $1-t'
+        - '&7az adóból.'
         material: 'REDSTONE'
         slot: 17
       back:
         name: '&cVissza'
         lore:
         - '&7Vissza a'
-        - '&eSelect Setting&7.'
+        - '&eJogkörök beállításához&7.'
         material: 'RED_STAINED_GLASS_PANE'
         slot: 19
     f:
       tax:
-        name: '&bTax:&7 {tax}'
+        name: '&bAdó:&7 {tax}'
         lore:
-        - '&7Next tax is in&b {next}&7.'
-        - '&7Is total: {total}'
+        - '&7A következő beszedési idő&b {next}&7.'
+        - '&7Teljes: {total}'
         - ' '
-        - '&8- &7Click here to change'
-        - '  &7the total setting.'
-        - '&8- &7If the tax is total,'
-        - '  &7players will only'
-        - '  &7pay the tax on land'
-        - '  &7or chunk join.'
-        - '&8- &7Players, which are'
-        - '  &7trusted in the whole'
-        - '  &7land, won''t pay the'
-        - '  &7tax value from chunks.'
-        - '  &7They pay the value of'
-        - '  &7this land.'
-        - '&8- &7Players, which are'
-        - '  &7trusted in certain chunks,'
-        - '  &7will only pay the tax'
-        - '  &7values of the chunks.'
+        - '&8- &7Ide kattintva szerkesztheted'
+        - '  &7a teljes árat.'
+        - '&8- &7Ha a teljes adó be van kapcsolva,'
+        - '  &7A játékosok csak'
+        - '  &7csatlakozáskor'
+        - '  &7fizetnek adót.'
+        - '&8- &7Az egész telekhez'
+        - '  &7adott játékosok'
+        - '  &7nem chunk adót fizetnek'
+        - '  &7hanem telek adót.'
+        - '&8- &7A csak bizonyos'
+        - '  &7chunkokhoz adott játékosok,'
+        - '  &7az adott chunkok adóit'
+        - '  &7fizetik.'
         material: 'GOLD_INGOT'
         slot: 14
     a:
       failure_maxValue:
-        name: '&4Max Value reached'
+        name: '&4Maximum érték elérve'
         lore:
-        - '&7You can''t set the tax'
-        - '&7value higher than&b {max}&7.'
+        - '&7Nem állíthatsz be magasabb'
+        - '&7adót mint&b {max}&7.'
         - ' '
-        - '&8- &7You can ask an administrator'
-        - '  &7to change this.'
+        - '&8- &7Megkérhetsz egy admint'
+        - '  &7hogy változtassa meg.'
         material: 'GLOWSTONE_DUST'
       failure_cooldown:
-        name: '&4Cooldown:&c You need to wait.'
+        name: '&4Várakozási idő:&c Várnod kell még.'
         lore:
-        - '&7You currently can''t change the'
-        - '&7tax value. You need to wait'
-        - '&b{time} &7hours.'
+        - '&7Nem állíthatod a adó'
+        - '&7értékét, várnod kell'
+        - '&b{time} &7órát.'
         - ' '
-        - '&8- &7You can ask an administrator'
-        - '  &7to change this.'
+        - '&8- &7Megkérhetsz egy admint'
+        - '  &7hogy változtassa meg.'
         material: 'GLOWSTONE_DUST'
     p:
       placeholder_1:
@@ -1324,82 +1324,82 @@ gui:
         from: 1
         to: 27
   actionConfirm:
-    title: '&8Confirm Action'
+    title: '&8Művelet megerősítése'
     size: 27
     s:
       info:
-        name: '&bPlease confirm this action.'
+        name: '&bBiztos vagy benne?.'
         lore:
-        - '&7Click &aYes &7to confirm or'
-        - '&cNo &7to abort this action.'
+        - '&7Kattints az &aIgenre &7hogy elfogadd'
+        - 'vagy a &cNemre &7hogy elutasítsd.'
         material: 'IRON_BARS'
         slot: 14
     l:
       yes_player:
-        name: '&aYes'
+        name: '&aIgen'
         lore:
-        - '&7Confirm this action.'
+        - '&7Művelet végrehajtása.'
         - ' '
-        - '&7Do you really want to'
-        - '&7untrust this player?'
+        - '&7Tényleg eltávolítod'
+        - '&7ezt a játékost?'
         material: 'LIME_STAINED_GLASS_PANE'
         from: 10
         to: 13
       no_player:
-        name: '&cNo'
+        name: '&cNem'
         lore:
-        - '&7Abort this action.'
+        - '&7Művelet megszakítása.'
         - ' '
-        - '&7Do you really want to'
-        - '&7untrust this player?'
+        - '&7Tényleg eltávolítod'
+        - '&7ezt a játékost?'
         material: 'RED_STAINED_GLASS_PANE'
         from: 15
         to: 18
       yes_invite:
-        name: '&aYes'
+        name: '&aIgen'
         lore:
-        - '&7Confirm this action.'
+        - '&7Művelet végrehajtása.'
         - ' '
-        - '&7Do you really want to'
-        - '&7revoke this invite?'
+        - '&7Tényleg visszavonod'
+        - '&7a meghívót?'
         material: 'LIME_STAINED_GLASS_PANE'
         from: 10
         to: 13
       no_invite:
-        name: '&cNo'
+        name: '&cNem'
         lore:
-        - '&7Abort this action.'
+        - '&7Művelet megszakítása.'
         - ' '
-        - '&7Do you really want to'
-        - '&7revoke this invite?'
+        - '&7Tényleg visszavonod'
+        - '&7a meghívót?'
         material: 'RED_STAINED_GLASS_PANE'
         from: 15
         to: 18
       yes_chunk:
-        name: '&aYes'
+        name: '&aIgen'
         lore:
-        - '&7Confirm this action.'
+        - '&7Művelet végrehajtása.'
         - ' '
-        - '&7Do you really want to'
-        - '&7leave this chunk?'
+        - '&7Biztosan el akarod'
+        - '&7hagyni ezt a chunkot?'
         - ' '
-        - '&8- &7If you''re the owner'
-        - '  &7of this chunk, it will'
-        - '  &7be deleted.'
+        - '&8- &7Ha a telek tulaja'
+        - '  &7vagy, akkor'
+        - '  &7törölve lesz.'
         material: 'LIME_STAINED_GLASS_PANE'
         from: 10
         to: 13
       no_chunk:
-        name: '&cNo'
+        name: '&cNem'
         lore:
-        - '&7Abort this action.'
+        - '&7Művelet megszakítása.'
         - ' '
-        - '&7Do you really want to'
-        - '&7leave this chunk?'
+        - '&7Biztosan el akarod'
+        - '&7hagyni ezt a chunkot?'
         - ' '
-        - '&8- &7If you''re the owner'
-        - '  &7of this chunk, it will'
-        - '  &7be deleted.'
+        - '&8- &7Ha a telek tulaja'
+        - '  &7vagy, akkor'
+        - '  &7törölve lesz.'
         material: 'RED_STAINED_GLASS_PANE'
         from: 15
         to: 18
@@ -1413,14 +1413,14 @@ gui:
         from: 19
         to: 27
   invites_player:
-    title: '&8Received Invites'
+    title: '&8Kapott meghívók'
     size: 36
     s:
       back:
         name: '&cVissza'
         lore:
         - '&7Vissza a'
-        - '&eMain Menu&7.'
+        - '&eFőmenübe&7.'
         material: 'RED_STAINED_GLASS_PANE'
         slot: 28
     f:
@@ -1444,20 +1444,20 @@ gui:
       invite:
         name: '&8Meghívó &7->&a {land}'
         lore:
-        - '&7Edit this invite or'
-        - '&7just view information.'
+        - '&7Szerkesztheted vagy'
+        - '&7megtekintheted a meghívókat.'
         material: 'BOOK'
         from: 10
         to: 27
       noInvite:
         name: '&8Meghívó &7-> &cSenki'
         lore:
-        - '&7There aren''t any'
-        - '&7received invites yet.'
+        - '&7Nincs egyetlen fogadott'
+        - '&7meghívód se.'
         - ' '
-        - '&8- &7Players can invite'
-        - '  &7you by executing:'
+        - '&8- &7Játékosok meghívhatnak a:'
         - '  &8/&aLands trust &8<&aPlayer&8>'
+        - '  &7paranccsal'
         material: 'PAPER'
         from: 10
         to: 27
@@ -1477,125 +1477,121 @@ gui:
       info_land:
         name: '&bInformációk'
         lore:
-        - '&7Land:&e {land}'
-        - '&7World:&e {world}'
+        - '&7Telek:&e {land}'
+        - '&7Világ:&e {world}'
         - ' '
-        - '&7Sender:&e {sender}'
-        - '&7Received:&e {time}'
+        - '&7Küldő:&e {sender}'
+        - '&7Fogadva:&e {time}'
         material: 'SIGN'
         slot: 14
       info_chunk:
         name: '&bInformációk'
         lore:
-        - '&7Chunk &8-> &7Land:&e {land} &7X:&e {x} &7Z:&e {z}'
+        - '&7Chunk &8-> &7Teleknév:&e {land} &7X:&e {x} &7Z:&e {z}'
         - ' '
-        - '&7Location:'
-        - '&7World:&e {world}'
+        - '&7Helye:'
+        - '&7Világ:&e {world}'
         - '&7X:&e {loc-x}'
         - '&7Z:&e {loc-z}'
         - ' '
-        - '&7Sender:&e {sender}'
-        - '&7Received:&e {time}'
+        - '&7Küldő:&e {sender}'
+        - '&7Fogadva:&e {time}'
         material: 'SIGN'
         slot: 14
     l:
       accept:
-        name: '&aAccept'
+        name: '&aElfogad'
         lore:
-        - '&7Accept this invite.'
+        - '&7Elfogadod a meghívót.'
         - ' '
-        - '&7Join cost:&e {join}'
-        - '&7Tax value:&e {tax}'
+        - '&7Ár:&e {join}'
+        - '&7Adó:&e {tax}'
         - ' '
-        - '&7Do you really want to'
-        - '&7accept this invite?'
+        - '&7Biztisan elfogadod'
+        - '&7a meghívót?'
         material: 'LIME_STAINED_GLASS_PANE'
         from: 10
         to: 13
       deny:
-        name: '&cDeny'
+        name: '&cElutasít'
         lore:
-        - '&7Deny this invite.'
+        - '&7Elutasítod a meghívót.'
         - ' '
-        - '&7Join cost:&e {join}'
-        - '&7Tax value:&e {tax}'
+        - '&7Ár:&e {join}'
+        - '&7Adó:&e {tax}'
         - ' '
-        - '&7Do you really want to'
-        - '&7accept this invite?'
+        - '&7Biztisan elfogadod'
+        - '&7a meghívót?'
         material: 'RED_STAINED_GLASS_PANE'
         from: 15
         to: 18
     a:
       failure_lands:
-        name: '&4Failure: &bLands Amount'
+        name: '&4Hiba: &bTelekszám'
         lore:
-        - '&7You can''t join this'
-        - '&7objective, because'
-        - '&7you reached your maximum'
-        - '&7amount of lands you can'
-        - '&7be part of.'
+        - '&7Nem csatlakozhatsz'
+        - '&7mert elérted'
+        - '&7a maximális'
+        - '&7csatlakozási telekszámot'
         - ' '
-        - '&8- &7Your maximum:&e {lands}'
+        - '&8- &7A maximumod:&e {lands}'
         material: 'RED_STAINED_GLASS_PANE'
       failure_inviteOwner:
-        name: '&4Failure: &bInvite Owner'
+        name: '&4Hiba: &bTulaj meghívás'
         lore:
-        - '&7You can''t join this'
-        - '&7objective, because'
-        - '&7you''re not allowed to'
-        - '&7have your own land and'
-        - '&7be part of an other land.'
+        - '&7Nem csatlakozhatsz'
+        - '&7mert nem lehetsz másik'
+        - '&7telek tagja miközben'
+        - '&7sajátod is van'
         - ' '
-        - '&8- &7This happens because'
-        - '  &7an administrator set that'
-        - '  &7players, which own a land,'
-        - '  &7aren''t allowed to be'
-        - '  &7part of an other land.'
+        - '&8- &7Egy konfigurációs'
+        - '  &7beállítás'
+        - '  &7tiltja ezt,'
         material: 'RED_STAINED_GLASS_PANE'
       failure_total:
-        name: '&4Failure: &bTotal Tax'
+        name: '&4Hiba: &bAdók'
         lore:
-        - '&7You can''t join this'
-        - '&7objective, because you'
-        - '&7don''t have enough'
-        - '&7money to pay the'
-        - '&7join cost.'
+        - '&7Nem csatlakozhatsz'
+        - '&7mert nicns elég pénzed'
+        - '&7hogy kifizesd'
+        - '&7a csatlakozási'
+        - '&7adót.'
         - ' '
-        - '&8- &7This happens because'
-        - '  &7the land owner set that'
-        - '  &7all players must pay'
-        - '  &7a specified value on join.'
+        - '&8- &7A telek tulaja'
+        - '  &7csatlakozáskor'
+        - '  &7fizetendő adót'
+        - '  &7állított be.'
         material: 'RED_STAINED_GLASS_PANE'
       failure_notComplete:
-        name: '&4Failure: &bNot complete'
+        name: '&4Hiba: &bNincs végrehajtva'
         lore:
-        - '&7Couldn''t trust you'
-        - '&7in all parts of the land,'
-        - '&7because the owner'
-        - '&7reached the maximum'
-        - '&7members value in some'
-        - '&7chunks.'
+        - '&7Nem lehetett hozzáadni'
+        - '&7a telekhez,'
+        - '&7mert a telek tulaja'
+        - '&7elérte a maximum'
+        - '&7tagok számát néhány'
+        - '&7chunkban.'
         - ' '
-        - '&8- &7Contact the land'
-        - '  &7owner for help.'
+        - '&8- &7Keresd fel a telek'
+        - '  &7tulaját segítségért.'
         - ' '
-        - '&8- &7Permission:'
-        - '&elands.members.<Number>'
+        - '&8- &7Jogok:'
+        - '&elands.members.<Szám>'
         material: 'RED_STAINED_GLASS_PANE'
       failure_notTrusted:
-        name: '&4Failure: &bNot complete'
+        name: '&4Hiba: &bNincs végrehajtva'
         lore:
-        - '&7Couldn''t trust you'
-        - '&7in this objective'
-        - '&7because the owner reached'
-        - '&7reached the maximum'
-        - '&7members value.'
+        - '&7Nem lehetett'
+        - '&7hozzáadni téged'
+        - '&7Mert a telek tulaja'
+        - '&7elérte a maximum'
+        - '&7tagok számát.'
         - ' '
-        - '&8- &7Contact the land'
-        - '  &7owner for help.'
+        - '&8- &7Keresd fel a telek'
+        - '  &7tulaját segítségért.'
         - ' '
-        - '&8- &7Permission:'
-        - '&elands.members.<Number>'
+        - '&8- &7Jogok:'
+        - '&elands.members.<Szám>'
         material: 'RED_STAINED_GLASS_PANE'
     p:
       placeholder_1:
