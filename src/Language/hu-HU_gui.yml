@@ -78,7 +78,7 @@
 general:
   wYes: '&aIgen'
   wNo: '&cNem'
-  none: '&cEgyik sem'
+  none: '&cNincs'
   now: '&aMost'
   enabled: '&aBekapcsolva'
   disabled: '&cKikapcsolva'
@@ -101,7 +101,7 @@ gui:
       lands:
         name: '&bTerületek'
         lore:
-        - '&7Láthatod az minden'
+        - '&7Láthatod minden'
         - '&7területed.'
         material: 'GRASS_BLOCK'
         slot: 16
@@ -560,22 +560,20 @@ gui:
         name: '&cAdmin'
         lore:
         - '&7Kattints ide a szerkesztéshez'
-        - '&7vagy csak listázd az adminokat.'
         - ' '
         - '&8- &7A játékosnak'
         - '  &7lehet admin joga'
-        - '  &7csak bizonyos chunkokban.'
+        - '  &7csak bizonyos chunkokban is.'
         material: 'ENCHANTED_GOLDEN_APPLE'
         slot: 11
       member:
         name: '&eTag'
         lore:
         - '&7Kattints ide a szerkesztéshez'
-        - '&7vagy csak listázd a tagokat.'
         - ' '
-        - '&8- &7Players can also'
-        - '  &7be trusted in'
-        - '  &7certain chunks.'
+        - '&8- &7A játékosok'
+        - '  &7hozzá lehetnek adva'
+        - '  &7csak bizonyos chunkokban is.'
         material: 'APPLE'
         slot: 17
       visitor:
@@ -732,7 +730,7 @@ gui:
         material: 'PLAYER_HEAD'
         slot: 11
       advanced:
-        name: '&bJogkörök részletes beállítása'
+        name: '&bJogkörök speciális beállításai'
         lore:
         - '&7Jogkörök jogainak szabályzása'
         - '&7mint pl.: lefoglalás vagy átnevezés'
@@ -923,13 +921,13 @@ gui:
         from: 10
         to: 27
       player_setRole:
-        name: '&bSet Roles'
+        name: '&bJogkörök beállítása'
         lore:
         - '&7Állapot: {enabled}'
         - '&7Feloldva: {unlocked}'
         - ' '
         - '&7Engedélyezed a jogkörnek'
-        - '&7set roles for players?'
+        - '&7hogy játékosok jogkörét állítsa?'
         - ' '
         - '&8- &7Nem tudják majd a náluk'
         - '  &7magasabb jogkör játékosait'
@@ -964,7 +962,7 @@ gui:
         - '&7Engedélyezed a jogkörnek'
         - '&7hogy telekbeállításokat módosítson?'
         - ' '
-        - '&8- &7Így nem tudják majd'
+        - '&8- &7Nem tudják majd'
         - '  &7módosítani a saját'
         - '  &7jogkör beállításaikat.'
         material: 'COMMAND_BLOCK'
@@ -991,7 +989,7 @@ gui:
         from: 29
         to: 36
   settings_role_advanced:
-    title: '&8Részletes beállítások &7-> {role}'
+    title: '&8Speciális beállítások &7-> {role}'
     size: 27
     s:
       back:
